@@ -828,3 +828,15 @@ body.car-theme {
     display: none !important;
   }
 }
+/* mặc định (PC + chung) */
+.start-screen {
+  min-height: 100vh;
+}
+
+/* mobile fix */
+@media (max-width: 768px) {
+  .start-screen {
+    height: 100dvh;
+    overflow: auto;
+  }
+}

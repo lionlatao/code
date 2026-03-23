@@ -773,15 +773,15 @@ body.car-theme {
     clip: rect(65px, 9999px, 45px, 0);
   }
 }
-/* ========== MOBILE OVERRIDE FULL ========== */
+/* ========== FIX MOBILE FULL ========= */
 @media (max-width: 768px) {
 
-  /* BODY CHO SCROLL LẠI */
   body {
     overflow-y: auto !important;
+    height: auto !important;
   }
 
-  /* ❗ BỎ FIXED → CHUYỂN SANG NORMAL */
+  /* ❌ BỎ center kiểu PC */
   #profile-block, #skills-block {
     position: relative !important;
 
@@ -795,41 +795,18 @@ body.car-theme {
     height: auto !important;
   }
 
-  /* HEADER */
+  /* ❗ bỏ kiểu căn giữa bằng translate */
+  #profile-block.profile-appear {
+    transform: none !important;
+  }
+
+  /* layout dọc */
   .profile-header {
     flex-direction: column !important;
-    align-items: center !important;
     text-align: center !important;
   }
 
-  /* AVATAR */
-  .profile-picture {
-    width: 100px !important;
-    height: 100px !important;
-  }
-
-  /* TEXT */
-  #profile-name {
-    font-size: 20px !important;
-  }
-
-  #profile-bio {
-    font-size: 14px !important;
-  }
-
-  /* BADGE */
-  .badge {
-    width: 18px !important;
-    height: 18px !important;
-  }
-
-  /* SOCIAL */
-  .social-icon {
-    width: 26px !important;
-    height: 26px !important;
-  }
-
-  /* ❗ CONTROL KHÔNG FLOAT NỮA */
+  /* control không fixed nữa */
   .controls,
   .top-controls {
     position: relative !important;
@@ -842,18 +819,7 @@ body.car-theme {
     flex-wrap: wrap;
   }
 
-  /* SLIDER */
-  .volume-slider, .transparency-slider {
-    width: 60px !important;
-  }
-
-  /* VISITOR */
-  .visitor-counter {
-    font-size: 12px !important;
-    justify-content: center;
-  }
-
-  /* ❗ TẮT CURSOR */
+  /* fix cursor mobile */
   body {
     cursor: auto !important;
   }

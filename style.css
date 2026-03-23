@@ -773,24 +773,26 @@ body.car-theme {
     clip: rect(65px, 9999px, 45px, 0);
   }
 }
-
+/* ================= MOBILE FIX CHUẨN ================= */
 @media (max-width: 768px) {
 
-  /* BLOCK CHÍNH */
+ 
   #profile-block, #skills-block {
+    top: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+
     width: 92vw !important;
     max-width: 92vw !important;
 
-    left: 50% !important;
-    top: 50% !important;
-
-    transform: translate(-50%, -50%) !important;
+    height: auto !important;
   }
 
-  /* HEADER */
+  /* HEADER XUỐNG DÒNG */
   .profile-header {
     flex-direction: column !important;
     align-items: center !important;
+    text-align: center !important;
   }
 
   /* AVATAR */
@@ -808,16 +810,44 @@ body.car-theme {
     font-size: 14px !important;
   }
 
-  /* FIX CÁI GÂY LỆCH NHẤT */
+  /* BADGE */
+  .badge {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  /* SOCIAL */
+  .social-icon {
+    width: 26px !important;
+    height: 26px !important;
+  }
+
+  /* ❗ FIX CONTROL (bỏ calc lỗi) */
   .controls {
     bottom: 10px !important;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-wrap: wrap;
   }
 
   .top-controls {
     bottom: 60px !important;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-wrap: wrap;
   }
 
-  /* TẮT CURSOR */
+  /* SLIDER */
+  .volume-slider, .transparency-slider {
+    width: 60px !important;
+  }
+
+  /* VISITOR */
+  .visitor-counter {
+    font-size: 12px !important;
+  }
+
+  /* ❗ TẮT CURSOR MOBILE */
   body {
     cursor: auto !important;
   }

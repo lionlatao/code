@@ -773,3 +773,85 @@ body.car-theme {
     clip: rect(65px, 9999px, 45px, 0);
   }
 }
+/* ================= MOBILE FIX (KHÔNG PHÁ CODE CŨ) ================= */
+
+@media (max-width: 768px) {
+
+  /* 1. FIX WIDTH */
+  #profile-block, #skills-block {
+    width: 92vw !important;
+    max-width: 92vw !important;
+    padding: 15px !important;
+  }
+
+  /* 2. FIX CĂN GIỮA (tránh lệch) */
+  #profile-block, #skills-block {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  /* 3. FIX HEADER */
+  .profile-header {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* 4. AVATAR */
+  .profile-picture {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  /* 5. TEXT */
+  #profile-name {
+    font-size: 22px !important;
+  }
+
+  #profile-bio {
+    font-size: 14px !important;
+  }
+
+  /* 6. BADGE */
+  .badge {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  /* 7. SOCIAL ICON */
+  .social-icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  /* 8. CONTROLS (FIX LỆCH DO CALC) */
+  .controls {
+    bottom: 15px !important;
+    flex-wrap: wrap;
+  }
+
+  .top-controls {
+    bottom: 70px !important;
+    flex-wrap: wrap;
+  }
+
+  /* 9. SLIDER */
+  .volume-slider, .transparency-slider {
+    width: 60px !important;
+  }
+
+  /* 10. VISITOR */
+  .visitor-counter {
+    font-size: 12px !important;
+    padding: 6px 10px !important;
+  }
+
+  /* 11. TẮT CUSTOM CURSOR */
+  body {
+    cursor: auto !important;
+  }
+
+  .custom-cursor {
+    display: none !important;
+  }
+}

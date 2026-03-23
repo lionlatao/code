@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  const startMessage = "Click here to see the motion baby, quay ngang để hiển thị tốt nhất";
+  const startMessage = "Click here , quay ngang điện thoại đi ";
   let startTextContent = '';
   let startIndex = 0;
   let startCursorVisible = true;
